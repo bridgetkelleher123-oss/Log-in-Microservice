@@ -7,7 +7,7 @@ then uses that input to either create and add a new user JSON object containing 
 input username and encrypted password to a database, or verifies the existence of the given
 username and password. Data for this program is passed across local port 5353.
 
-## Sample request and response collection
+## Sample Request and Response Rollection
 
 ~~~python
 import json
