@@ -131,5 +131,7 @@ finally:
     socket.close()
     context.term()
 ```
+## UML Sequence Diagram
 
+![Login Microservice UML Sequence Diagram](uml_login.png)
 

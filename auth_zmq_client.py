@@ -15,12 +15,20 @@ request_data = {
     "password": "TestPassword123!"
 }
 
+login_request = {
+    "action": "login",
+    "username": "ZeroMQTestUser",
+    "password": "TestPassword123!"
+}
+
 try:
     socket.send_json(request_data)
-
     response = socket.recv_json()
-
     print("Server response:", response)
+
+    socket.send_json(login_request)
+    login_response = socket.recv_json()
+    print("Login response:", login_response)
 
 except zmq.Again:
     print("Authentication microservice timed out.")
