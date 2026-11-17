@@ -22,7 +22,7 @@ try:
 
     print("Server response:", response)
 
-except xmq.Again:
+except zmq.Again:
     print("Authentication microservice timed out.")
 
 except zmq.ZMQError as error:
